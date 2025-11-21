@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>دووا | محصولات</title>
+  <title>تماس | نویز کالکشنز و دووا</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;600&family=Vazirmatn:wght@400;500;600&display=swap" rel="stylesheet">
@@ -42,6 +42,17 @@
     .lang-toggle:hover {
       background: #f0f0f0;
     }
+    .map-container {
+      margin-top: 2.5rem;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+    .map-container iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+    }
   </style>
 </head>
 <body>
@@ -54,9 +65,9 @@
       <nav class="nav-desktop">
         <a href="index.html" data-fa="خانه" data-en="Home">خانه</a>
         <a href="products-noise.html" data-fa="نویز کالکشنز" data-en="Noise Collections">نویز کالکشنز</a>
-        <a href="products-dova.html" class="active" data-fa="دووا" data-en="Dova">دووا</a>
+        <a href="products-dova.html" data-fa="دووا" data-en="Dova">دووا</a>
         <a href="about.html" data-fa="درباره" data-en="About">درباره</a>
-        <a href="contact.html" data-fa="تماس" data-en="Contact">تماس</a>
+        <a href="contact.html" class="active" data-fa="تماس" data-en="Contact">تماس</a>
         <button class="lang-toggle" onclick="toggleLang()">English</button>
       </nav>
       <button class="mobile-menu-btn" aria-label="تغییر منو">
@@ -75,142 +86,42 @@
     </nav>
   </header>
 
-  <!-- Products Section -->
-  <section class="products-section">
+  <!-- Contact Section -->
+  <section class="contact-section">
     <div class="container">
-      <h1 data-fa="دووا" data-en="Dova">دووا</h1>
-
-      <h2 class="section-title" data-fa="جعبه‌های دست‌دوز" data-en="Hand Stitched Pouches">جعبه‌های دست‌دوز</h2>
-      <div class="products-grid">
-        <!-- Pouch 1 - Pink -->
-        <div class="product-card fade-in">
-          <div class="product-image">
-            <img src="https://i.ibb.co/fdSPf7mc/handmadegab1.png" alt="جعبه دست‌دوز">
+      <h1 data-fa="تماس با ما" data-en="Get in Touch">تماس با ما</h1>
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="contact-item">
+            <h3 data-fa="تلفن / واتساپ" data-en="Phone / WhatsApp">تلفن / واتساپ</h3>
+            <p>+98 991 868 1838</p>
           </div>
-          <div class="product-info">
-            <h3 data-fa="جعبه دست‌دوز" data-en="Hand Stitched Pouch">جعبه دست‌دوز</h3>
-            <p class="price">260,000 تومان</p>
-            <p class="description" data-fa="جعبه پارچه‌ای دست‌دوز با لبه موجدار. جنس: ترگال و تترون. ابعاد: ۲۰×۱۶ سانتی‌متر." data-en="Hand-stitched fabric pouch with ruffled edge. Made from Teragal & Tetrone. Dimensions: 20×16 cm.">جعبه پارچه‌ای دست‌دوز با لبه موجدار. جنس: ترگال و تترون. ابعاد: ۲۰×۱۶ سانتی‌متر.</p>
-            <div class="color-swatches">
-              <span class="color-swatch" style="background-color: #E91E63;" aria-label="صورتی"></span>
-            </div>
-            <a href="https://wa.me/989918681838" class="btn" target="_blank" rel="noopener" data-fa="سفارش از طریق تماس" data-en="Contact to Order">سفارش از طریق تماس</a>
+          <div class="contact-item">
+            <h3 data-fa="ایمیل" data-en="Email">ایمیل</h3>
+            <p>noisecollectionsstudio@gmail.com</p>
+          </div>
+          <div class="contact-item">
+            <h3 data-fa="آدرس" data-en="Location">آدرس</h3>
+            <p data-fa="آذربایجان شرقی، تبریز، دانشگاه هنر تبریز، کارگاه شماره ۲۶" data-en="Tabriz University of Art, Workshop #26, East Azerbaijan, Iran">آذربایجان شرقی، تبریز، دانشگاه هنر تبریز، کارگاه شماره ۲۶</p>
           </div>
         </div>
 
-        <!-- Pouch 2 - Black -->
-        <div class="product-card fade-in">
-          <div class="product-image">
-            <img src="https://i.ibb.co/v6YXRWMQ/handmadegab2.png" alt="جعبه دست‌دوز">
-          </div>
-          <div class="product-info">
-            <h3 data-fa="جعبه دست‌دوز" data-en="Hand Stitched Pouch">جعبه دست‌دوز</h3>
-            <p class="price">260,000 تومان</p>
-            <p class="description" data-fa="جعبه پارچه‌ای دست‌دوز با لبه موجدار. جنس: ترگال و تترون. ابعاد: ۲۰×۱۶ سانتی‌متر." data-en="Hand-stitched fabric pouch with ruffled edge. Made from Teragal & Tetrone. Dimensions: 20×16 cm.">جعبه پارچه‌ای دست‌دوز با لبه موجدار. جنس: ترگال و تترون. ابعاد: ۲۰×۱۶ سانتی‌متر.</p>
-            <div class="color-swatches">
-              <span class="color-swatch" style="background-color: #000000;" aria-label="سیاه"></span>
-            </div>
-            <a href="https://wa.me/989918681838" class="btn" target="_blank" rel="noopener" data-fa="سفارش از طریق تماس" data-en="Contact to Order">سفارش از طریق تماس</a>
-          </div>
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3065.474596468886!2d46.27933657675673!3d38.08384997971564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x401b5a7e3c0b1b1b%3A0x1b1b1b1b1b1b1b1b!2sTabriz%20University%20of%20Art!5e0!3m2!1sen!2sus!4v1732188000000!5m2!1sen!2sus"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
         </div>
 
-        <!-- Pouch 3 - Blue -->
-        <div class="product-card fade-in">
-          <div class="product-image">
-            <img src="https://i.ibb.co/yccC11m8/handmadegab3.png" alt="جعبه دست‌دوز">
-          </div>
-          <div class="product-info">
-            <h3 data-fa="جعبه دست‌دوز" data-en="Hand Stitched Pouch">جعبه دست‌دوز</h3>
-            <p class="price">260,000 تومان</p>
-            <p class="description" data-fa="جعبه پارچه‌ای دست‌دوز با لبه موجدار. جنس: ترگال و تترون. ابعاد: ۲۰×۱۶ سانتی‌متر." data-en="Hand-stitched fabric pouch with ruffled edge. Made from Teragal & Tetrone. Dimensions: 20×16 cm.">جعبه پارچه‌ای دست‌دوز با لبه موجدار. جنس: ترگال و تترون. ابعاد: ۲۰×۱۶ سانتی‌متر.</p>
-            <div class="color-swatches">
-              <span class="color-swatch" style="background-color: #2196F3;" aria-label="آبی"></span>
-            </div>
-            <a href="https://wa.me/989918681838" class="btn" target="_blank" rel="noopener" data-fa="سفارش از طریق تماس" data-en="Contact to Order">سفارش از طریق تماس</a>
-          </div>
-        </div>
-
-        <!-- Pouch 4 - Red -->
-        <div class="product-card fade-in">
-          <div class="product-image">
-            <img src="https://i.ibb.co/67Xqkh8y/handmadegab4.png" alt="جعبه دست‌دوز">
-          </div>
-          <div class="product-info">
-            <h3 data-fa="جعبه دست‌دوز" data-en="Hand Stitched Pouch">جعبه دست‌دوز</h3>
-            <p class="price">260,000 تومان</p>
-            <p class="description" data-fa="جعبه پارچه‌ای دست‌دوز با لبه موجدار. جنس: ترگال و تترون. ابعاد: ۲۰×۱۶ سانتی‌متر." data-en="Hand-stitched fabric pouch with ruffled edge. Made from Teragal & Tetrone. Dimensions: 20×16 cm.">جعبه پارچه‌ای دست‌دوز با لبه موجدار. جنس: ترگال و تترون. ابعاد: ۲۰×۱۶ سانتی‌متر.</p>
-            <div class="color-swatches">
-              <span class="color-swatch" style="background-color: #F44336;" aria-label="قرمز"></span>
-            </div>
-            <a href="https://wa.me/989918681838" class="btn" target="_blank" rel="noopener" data-fa="سفارش از طریق تماس" data-en="Contact to Order">سفارش از طریق تماس</a>
-          </div>
-        </div>
-      </div>
-
-      <h2 class="section-title" data-fa="کیف‌های دستی" data-en="Handbags">کیف‌های دستی</h2>
-      <div class="products-grid">
-        <!-- Handbag 1 - Gray -->
-        <div class="product-card fade-in">
-          <div class="product-image">
-            <img src="https://i.ibb.co/LD87472J/handbag1.png" alt="کیف دستی">
-          </div>
-          <div class="product-info">
-            <h3 data-fa="کیف دستی" data-en="Handbag">کیف دستی</h3>
-            <p class="price">240,000 تومان</p>
-            <p class="description" data-fa="کیف پارچه‌ای دست‌دوخت با زیپ. ابعاد: ۲۳×۱۶ سانتی‌متر." data-en="Hand-sewn fabric handbag with zipper. Dimensions: 23×16 cm.">کیف پارچه‌ای دست‌دوخت با زیپ. ابعاد: ۲۳×۱۶ سانتی‌متر.</p>
-            <div class="color-swatches">
-              <span class="color-swatch" style="background-color: #9E9E9E;" aria-label="خاکستری"></span>
-            </div>
-            <a href="https://wa.me/989918681838" class="btn" target="_blank" rel="noopener" data-fa="سفارش از طریق تماس" data-en="Contact to Order">سفارش از طریق تماس</a>
-          </div>
-        </div>
-
-        <!-- Handbag 2 - Pink -->
-        <div class="product-card fade-in">
-          <div class="product-image">
-            <img src="https://i.ibb.co/spTKdTHz/handbag2.png" alt="کیف دستی">
-          </div>
-          <div class="product-info">
-            <h3 data-fa="کیف دستی" data-en="Handbag">کیف دستی</h3>
-            <p class="price">240,000 تومان</p>
-            <p class="description" data-fa="کیف پارچه‌ای دست‌دوخت با زیپ. ابعاد: ۲۳×۱۶ سانتی‌متر." data-en="Hand-sewn fabric handbag with zipper. Dimensions: 23×16 cm.">کیف پارچه‌ای دست‌دوخت با زیپ. ابعاد: ۲۳×۱۶ سانتی‌متر.</p>
-            <div class="color-swatches">
-              <span class="color-swatch" style="background-color: #E91E63;" aria-label="صورتی"></span>
-            </div>
-            <a href="https://wa.me/989918681838" class="btn" target="_blank" rel="noopener" data-fa="سفارش از طریق تماس" data-en="Contact to Order">سفارش از طریق تماس</a>
-          </div>
-        </div>
-
-        <!-- Handbag 3 - Blue -->
-        <div class="product-card fade-in">
-          <div class="product-image">
-            <img src="https://i.ibb.co/VkJmHCq/handbag3.png" alt="کیف دستی">
-          </div>
-          <div class="product-info">
-            <h3 data-fa="کیف دستی" data-en="Handbag">کیف دستی</h3>
-            <p class="price">240,000 تومان</p>
-            <p class="description" data-fa="کیف پارچه‌ای دست‌دوخت با زیپ. ابعاد: ۲۳×۱۶ سانتی‌متر." data-en="Hand-sewn fabric handbag with zipper. Dimensions: 23×16 cm.">کیف پارچه‌ای دست‌دوخت با زیپ. ابعاد: ۲۳×۱۶ سانتی‌متر.</p>
-            <div class="color-swatches">
-              <span class="color-swatch" style="background-color: #2196F3;" aria-label="آبی"></span>
-            </div>
-            <a href="https://wa.me/989918681838" class="btn" target="_blank" rel="noopener" data-fa="سفارش از طریق تماس" data-en="Contact to Order">سفارش از طریق تماس</a>
-          </div>
-        </div>
-
-        <!-- Handbag 4 - Navy -->
-        <div class="product-card fade-in">
-          <div class="product-image">
-            <img src="https://i.ibb.co/5Q4KrnH/handbag4.png" alt="کیف دستی">
-          </div>
-          <div class="product-info">
-            <h3 data-fa="کیف دستی" data-en="Handbag">کیف دستی</h3>
-            <p class="price">240,000 تومان</p>
-            <p class="description" data-fa="کیف پارچه‌ای دست‌دوخت با زیپ. ابعاد: ۲۳×۱۶ سانتی‌متر." data-en="Hand-sewn fabric handbag with zipper. Dimensions: 23×16 cm.">کیف پارچه‌ای دست‌دوخت با زیپ. ابعاد: ۲۳×۱۶ سانتی‌متر.</p>
-            <div class="color-swatches">
-              <span class="color-swatch" style="background-color: #3F51B5;" aria-label="سرمه‌ای"></span>
-            </div>
-            <a href="https://wa.me/989918681838" class="btn" target="_blank" rel="noopener" data-fa="سفارش از طریق تماس" data-en="Contact to Order">سفارش از طریق تماس</a>
-          </div>
+        <div class="contact-actions">
+          <a href="https://wa.me/989918681838" class="btn" target="_blank" rel="noopener">
+            <span data-fa="پیام از طریق واتساپ" data-en="Message via WhatsApp">پیام از طریق واتساپ</span>
+          </a>
+          <a href="mailto:noisecollectionsstudio@gmail.com" class="btn btn-secondary">
+            <span data-fa="ایمیل بزنید یا تماس بگیرید." data-en="Email us or call.">ایمیل بزنید یا تماس بگیرید.</span>
+          </a>
         </div>
       </div>
     </div>
