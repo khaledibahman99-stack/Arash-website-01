@@ -12,10 +12,14 @@ body {
   line-height: 1.6;
 }
 
+html[lang="fa"] body {
+  font-family: 'Vazirmatn', 'Inter', sans-serif;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 2rem; /* افزایش padding برای فضای بیشتر */
+  padding: 0 2rem;
 }
 
 /* === GLASSMORPHISM HEADER === */
@@ -28,7 +32,7 @@ body {
   -webkit-backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   padding: 1.25rem 0;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); /* سایه عمیق‌تر */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
 
 .glass-header .container {
@@ -58,7 +62,7 @@ body {
 
 .nav-desktop a:hover,
 .nav-desktop a.active {
-  color: #4caf50;
+  color: #c75724; /* رنگ جدید برای تأکید */
 }
 
 .mobile-menu-btn {
@@ -124,7 +128,7 @@ body {
   position: relative;
   z-index: 10;
   text-align: center;
-  color: white;
+  color: #333333; /* تغییر رنگ متن به #333333 */
   padding: 2rem;
   max-width: 800px;
 }
@@ -134,7 +138,7 @@ body {
   font-size: 3.8rem;
   font-weight: 700;
   margin-bottom: 1.25rem;
-  text-shadow: 0 4px 25px rgba(0, 0, 0, 0.3); /* سایه حرفه‌ای‌تر */
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* سایه نرم */
 }
 
 .hero-content p {
@@ -142,14 +146,14 @@ body {
 }
 
 .hero-content a {
-  color: white;
+  color: #333333;
   text-decoration: none;
   font-weight: 600;
   transition: opacity 0.3s;
 }
 
 .hero-content a:hover {
-  opacity: 0.8;
+  opacity: 0.7;
 }
 
 /* === FEATURED COLLECTIONS === */
@@ -192,7 +196,7 @@ body {
 /* === BUTTONS === */
 .btn {
   display: inline-block;
-  background: linear-gradient(to bottom, #d0e8d2, #b8d8b9);
+  background: linear-gradient(to bottom, #e8d7c7, #d8bfa5); /* رنگ گرم با #c75724 */
   color: #2a2a2a;
   padding: 0.8rem 2.2rem;
   border-radius: 8px;
@@ -201,13 +205,14 @@ body {
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
   border: none;
   cursor: pointer;
-  box-shadow: 0 4px 12px rgba(200, 230, 201, 0.5);
+  box-shadow: 0 4px 12px rgba(199, 87, 36, 0.15);
 }
 
 .btn:hover {
-  background: linear-gradient(to bottom, #b8d8b9, #a5c8a7);
+  background: linear-gradient(to bottom, #d8bfa5, #c75724);
   transform: translateY(-3px);
-  box-shadow: 0 6px 16px rgba(200, 230, 201, 0.7);
+  box-shadow: 0 6px 16px rgba(199, 87, 36, 0.25);
+  color: white;
 }
 
 .btn-large {
@@ -217,7 +222,8 @@ body {
 
 .btn-secondary {
   background: white;
-  border: 2px solid #c8e6c9;
+  border: 2px solid #c75724;
+  color: #c75724;
   box-shadow: none;
 }
 
@@ -237,6 +243,7 @@ body {
   font-size: 3.2rem;
   margin-bottom: 4rem;
   text-align: center;
+  color: #c75724; /* رنگ تأکید */
 }
 
 .section-title {
@@ -262,7 +269,7 @@ body {
 }
 
 .product-card:hover {
-  transform: translateY(-8px) scale(1.015);
+  transform: translateY(-8px) scale(1.01);
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
 }
 
@@ -271,17 +278,23 @@ body {
   aspect-ratio: 1;
   overflow: hidden;
   background: #f9f9f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
 }
 
 .product-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  width: auto;
+  height: auto;
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain; /* عکس کامل نمایش داده شود */
   transition: transform 0.4s ease;
 }
 
 .product-card:hover .product-image img {
-  transform: scale(1.05);
+  transform: scale(1.03);
 }
 
 .product-info {
@@ -297,7 +310,7 @@ body {
 .price {
   font-size: 1.15rem;
   font-weight: 600;
-  color: #4caf50;
+  color: #c75724; /* رنگ تأکید */
   margin-bottom: 0.85rem;
 }
 
@@ -344,6 +357,7 @@ body {
   font-size: 3.2rem;
   margin-bottom: 2.5rem;
   text-align: center;
+  color: #c75724;
 }
 
 .intro {
@@ -402,10 +416,10 @@ body {
 
 .maker-info blockquote {
   font-style: italic;
-  color: #4caf50;
+  color: #c75724;
   font-size: 1.15rem;
   padding-left: 1.6rem;
-  border-left: 4px solid #c8e6c9;
+  border-left: 4px solid #e8d7c7;
 }
 
 /* === CONTACT SECTION === */
@@ -418,6 +432,7 @@ body {
   font-size: 3.2rem;
   margin-bottom: 3.5rem;
   text-align: center;
+  color: #c75724;
 }
 
 .contact-content {
@@ -448,6 +463,19 @@ body {
   font-size: 1.12rem;
 }
 
+.map-container {
+  margin-top: 2.5rem;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+}
+
 .contact-actions {
   display: flex;
   flex-direction: column;
@@ -462,7 +490,7 @@ body {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   padding: 2.5rem 0;
   margin-top: auto;
-  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.06); /* سایه بالا */
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.06);
 }
 
 .glass-footer p {
@@ -528,7 +556,7 @@ body {
   .hero-content h1 {
     font-size: 1.9rem;
   }
-  .container {	
+  .container {
     padding: 0 1.5rem;
   }
 }
